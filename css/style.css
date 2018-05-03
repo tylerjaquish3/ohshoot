@@ -1,11 +1,4 @@
 /*
-    Theme Name: Maxim
-    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
-
-/*
 ===========================
 CONTENTS:
 
@@ -369,6 +362,10 @@ header .logo {
 	margin-bottom:30px;
 }
 
+header .logo img {
+	width: 33%;
+}
+
 /* --- Header slider --- */
 #header-wrapper.header-slider {
 	background: #444 url(../img/bg/bg-1.jpg) no-repeat center center fixed;
@@ -379,7 +376,7 @@ header .logo {
 }
 
 #main-flexslider ul.slides li p {
-	font-size: 72px;
+	font-size: 50px;
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 0px;
@@ -401,7 +398,9 @@ header .logo {
 	-o-box-shadow: none;
 }
 
-
+.flex-direction-nav {
+	display: none;
+}
 
 /* --- Header subscribe form --- */
 
@@ -476,7 +475,7 @@ section.spacer {
 }
 
 .spacer.green,.section.green {
-	background:#1bac91;
+	background:#40e0d0;
 }
 
 .spacer.green,.section.green h4 {
