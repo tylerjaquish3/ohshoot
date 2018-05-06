@@ -1,0 +1,26 @@
+
+@media (max-width: 450px) {
+
+	header .logo img {
+	    width: 75%;
+	}
+
+	.tagline p {
+	    font-size: 30px;
+	    line-height: 30px;
+	}
+
+	.tagline {
+		margin-bottom: 30px;
+	}
+
+	.icon-circled.icon-2x {
+	    width: 37px !important;
+	    height: 37px !important;
+	    line-height: 40px !important;
+	}
+
+	#main-flexslider ul.slides li p {
+    	font-size: 32px;
+    }
+}
