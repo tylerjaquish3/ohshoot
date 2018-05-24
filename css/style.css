@@ -24,9 +24,9 @@ CONTENTS:
 @import url('prettyPhoto.css');
 /* flexslider */
 @import url('flexslider.css');
-
-/* font awesome */
 @import url('font-awesome.css');
+/* font awesome */
+@import url('fontawesome.min.css');
 /* overwrite */
 @import url('overwrite.css');
 /* animation */
@@ -399,7 +399,7 @@ header .logo img {
 	-o-box-shadow: none;
 }
 
-.flex-direction-nav {
+.flex-directnav {
 	display: none;
 }
 
@@ -506,7 +506,8 @@ section.spacer.bg2 {
 }
 
 section.spacer.bg3 {
-	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
+	background-color: #f36f36;
+	/*background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;*/
 	width:100%;
 	height:auto;
 	margin:0;	
@@ -521,10 +522,7 @@ section.spacer blockquote cite {
 	color:#555;
 }
 
-
-
 /* === section works === */
-
 #works h4 {
 	margin-bottom:20px;
 }
@@ -1718,4 +1716,150 @@ p.copyright {
 div.credits, .credits a, .credits a:hover {
 	color: #2b2b2b;
 	cursor: default;
+}
+
+/* Pricing Section
+--------------------------------*/
+#pricing {
+  padding: 60px 0 60px 0;
+  overflow: hidden;
+}
+
+#pricing .box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+}
+
+#pricing h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+#pricing h4 sup {
+  font-size: 20px;
+  top: -20px;
+}
+
+#pricing h4 span {
+  color: #bababa;
+  font-size: 20px;
+}
+
+#pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+#pricing ul li {
+  padding-bottom: 4px;
+  font-size: 13px;
+}
+
+#pricing ul svg {
+  color: #1dc8cd;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+#pricing .get-started-btn {
+  background: #515e61;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+#pricing .featured {
+  border: 2px solid #1dc8cd;
+}
+
+#pricing .featured .get-started-btn {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+
+/*.carousel-inner*/
+#myCarousel {
+	margin-top: 50px;
+	border-bottom: 4px solid #005f8d;
+}
+
+.carousel-caption {
+	padding: 0px;
+	bottom: 40%;
+	display: block;
+	height: 80px;
+}
+.carousel-caption h1 {
+	font-size: 45px;
+	padding: 10px 15px;
+	background: rgba(128, 180, 33, 0.80);
+	color: #FFFFFF;
+	text-shadow: none;
+	font-weight: bold;
+	display: inline-block;
+}
+.carousel-content h3 {
+	font-size: 24px;
+	color: #fff;
+}
+
+.carousel-content {
+    color:#fff;
+    display:block;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-content p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.carousel-inner {
+	width: 70%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-inner .item .active {
+	margin: auto;	
+}
+
+.carousel-control {
+	border: none;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background: none;
+    font-size: 60px;
+}
+
+#testimonial-div {
+    margin-left: auto;
+    margin-right: auto;
+    float: initial;
+}
+
+.fa-quote-left {
+	margin-right: 10px;
+}
+
+.fa-quote-right {
+	margin-left: 10px;
 }
