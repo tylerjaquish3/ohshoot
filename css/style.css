@@ -459,7 +459,7 @@ section.section {
 }
 section.section h4 {
 	text-align: center;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 	font-size: 46px;
 	font-weight: 700;
 	letter-spacing: -1px;
@@ -1721,71 +1721,73 @@ div.credits, .credits a, .credits a:hover {
 /* Pricing Section
 --------------------------------*/
 #pricing {
-  padding: 60px 0 60px 0;
-  overflow: hidden;
+	padding: 60px 0 60px 0;
+	overflow: hidden;
 }
 
 #pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  text-align: center;
+	padding: 40px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+	background: #fff;
+	text-align: center;
+	min-height: 352px;
 }
 
 #pricing h3 {
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	font-size: 28px;
 }
 
 #pricing h4 sup {
-  font-size: 20px;
-  top: -20px;
+	font-size: 20px;
+	top: -20px;
 }
 
 #pricing h4 span {
-  color: #bababa;
-  font-size: 20px;
+	color: #bababa;
+	font-size: 20px;
+	line-height: .6em;
 }
 
 #pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
+	padding: 0;
+	list-style: none;
+	color: #999;
+	text-align: left;
+	line-height: 20px;
 }
 
 #pricing ul li {
-  padding-bottom: 4px;
-  font-size: 13px;
+	padding-bottom: 4px;
+	font-size: 14px;
 }
 
 #pricing ul svg {
-  color: #1dc8cd;
-  font-size: 18px;
-  padding-right: 4px;
+	color: #1dc8cd;
+	font-size: 18px;
+	padding-right: 4px;
 }
 
 #pricing .get-started-btn {
-  background: #515e61;
-  display: inline-block;
-  padding: 6px 30px;
-  border-radius: 20px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+	background: #515e61;
+	display: inline-block;
+	padding: 6px 30px;
+	border-radius: 20px;
+	color: #fff;
+	transition: none;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Montserrat", sans-serif;
 }
 
 #pricing .featured {
-  border: 2px solid #1dc8cd;
+	border: 2px solid #1dc8cd;
 }
 
 #pricing .featured .get-started-btn {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+	background: linear-gradient(45deg, #1de099, #1dc8cd);
 }
 
 /*.carousel-inner*/
@@ -1862,4 +1864,13 @@ div.credits, .credits a, .credits a:hover {
 
 .fa-quote-right {
 	margin-left: 10px;
+}
+
+a {
+	color: #40e0d0;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
 }
