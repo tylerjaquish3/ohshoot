@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/style.css?v1.5" rel="stylesheet">
+	<link href="css/style.css?v1.6" rel="stylesheet">
 	<link href="css/responsive.css?v1.3" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -40,7 +40,6 @@
 								<li><a title="services" href="#services">Services</a></li>
 								<li><a title="pricing" href="#pricing">Pricing</a></li>
 								<li><a title="contact" href="#contact">Contact</a></li>
-								<!-- <li><a href="page.html">Page</a></li> -->
 							</ul>
 						</nav>
 					</div>
@@ -348,11 +347,11 @@
 					<div class="cform" id="contact-form">
 						<div id="sendmessage">Your message has been sent. Thank you!</div>
 						<div id="errormessage"></div>
-						<form action="" method="post" role="form" class="contactForm">
+						<form method="post" role="form" id="contactForm">
 							<div class="row">
 								<div class="span6">
 									<div class="field your-name form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
 										<div class="validation"></div>
 									</div>
 									<div class="field your-email form-group">
@@ -360,7 +359,7 @@
 										<div class="validation"></div>
 									</div>
 									<div class="field subject form-group">
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 characters" />
 										<div class="validation"></div>
 									</div>
 								</div>
@@ -417,6 +416,28 @@
 	<script src="js/custom.js"></script>
 	<script src="contactform/contactform.js"></script>
 	<script src="js/fontawesome-all.min.js"></script>
+
+	<script type="text/javascript">
+
+        $('#contactForm').submit(function (e) {
+        	e.preventDefault();
+
+            var formData = $('#contactForm').serialize();
+            $.ajax({
+                url: 'sendemail.php',
+                type: "POST",
+                data: formData,
+                dataType: 'json',
+                complete: function (response) {
+                    $("#contactForm :input").each(function(){
+                        $(this).val('');
+                    });
+                    // addAlertToPage('success', 'success', 'Your message was sent!', 10);
+                }
+            })
+        });
+
+    </script>
 
 </body>
 
