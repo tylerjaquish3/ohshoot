@@ -1646,6 +1646,15 @@ div.credits, .credits a, .credits a:hover {
 	background: linear-gradient(45deg, #1de099, #1dc8cd);
 }
 
+section#photography {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+#photography h1, #photography h2, #photography h3, #photography h4 {
+	color: #fff;
+}
+
 /*.carousel-inner*/
 #myCarousel {
 	margin-top: 50px;
@@ -1729,4 +1738,8 @@ a {
 a:hover {
 	color: #000;
 	text-decoration: none;
+}
+
+.btn-primary {
+	background: #40e0d0;
 }
