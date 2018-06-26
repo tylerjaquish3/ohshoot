@@ -1743,3 +1743,7 @@ a:hover {
 .btn-primary {
 	background: #40e0d0;
 }
+
+#photog {
+	width: 50%;
+}
