@@ -3,7 +3,8 @@ jQuery(document).ready(function($) {
 "use strict";
 
     //Contact
-    $('form.contactForm').submit(function(){
+    $('#contactForm').submit(function(e){
+        e.preventDefault();
         var f = $(this).find('.form-group'), 
         ferror = false, 
         emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -79,20 +80,17 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();		
             $.ajax({
                 type: "POST",
-                url: "contactform/contactform.php",
+                url: "sendemail.php",
                 data: str,
                 success: function(msg){
-                   // alert(msg);
-                    if(msg == 'OK') {
+                    if (msg.type == 'success') {
                         $("#sendmessage").addClass("show");			
                         $("#errormessage").removeClass("show");	
-                    }
-                    else {
+                    } else {
                         $("#sendmessage").removeClass("show");
                         $("#errormessage").addClass("show");
                         $('#errormessage').html(msg);
                     }
-                    
                 }
             });
         return false;

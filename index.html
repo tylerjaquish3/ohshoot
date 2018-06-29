@@ -394,7 +394,7 @@
 										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
 										<div class="validation"></div>
 									</div>
-									<input type="submit" value="Send message" class="btn btn-theme pull-left">
+									<input type="submit" value="Send Message" class="btn btn-theme pull-left">
 								</div>
 							</div>
 						</form>
@@ -445,23 +445,23 @@
 
 	<script type="text/javascript">
 
-        $('#contactForm').submit(function (e) {
-        	e.preventDefault();
+        // $('#contactForm').submit(function (e) {
+        // 	e.preventDefault();
 
-            var formData = $('#contactForm').serialize();
-            $.ajax({
-                url: 'sendemail.php',
-                type: "POST",
-                data: formData,
-                dataType: 'json',
-                complete: function (response) {
-                    $("#contactForm :input").each(function(){
-                        $(this).val('');
-                    });
-                    // addAlertToPage('success', 'success', 'Your message was sent!', 10);
-                }
-            })
-        });
+        //     var formData = $('#contactForm').serialize();
+        //     $.ajax({
+        //         url: 'sendemail.php',
+        //         type: "POST",
+        //         data: formData,
+        //         dataType: 'json',
+        //         complete: function (response) {
+        //             $("#contactForm :input").each(function(){
+        //                 $(this).val('');
+        //             });
+        //             //addAlertToPage('success', 'success', 'Your message was sent!', 10);
+        //         }
+        //     })
+        // });
 
     </script>
 

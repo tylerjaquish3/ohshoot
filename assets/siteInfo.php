@@ -1,9 +1,6 @@
 <?php 
 	if (!defined('IS_DEV')) {
-		define('IS_DEV', false);
+		define('IS_DEV', true);
 	}
-
-
-// Connection info
 
 ?>
