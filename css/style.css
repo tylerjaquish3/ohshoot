@@ -1747,3 +1747,7 @@ a:hover {
 #photog {
 	width: 50%;
 }
+
+.cancellation {
+    padding-top: 80px !important;
+}
