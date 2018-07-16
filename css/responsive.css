@@ -72,8 +72,12 @@
 	}
 }
     
-    /* Smaller screens ----------- */
+/* Smaller screens ----------- */
 @media (max-width : 480px) {
+	#pricing h4 {
+		line-height: 22px;
+	}
+
 	#header-wrapper {
 		padding-top:80px;
 	}
@@ -114,12 +118,25 @@
     }
 
     .carousel-content h3 {
-		font-size: 16px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	section.spacer {
+	    padding: 60px 0 0px;
+	}
+
+	.stretch {
+	    letter-spacing: 3px;
 	}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
+
+	#pricing h4 {
+		line-height: 24px;
+	}
 
 	section.section {
 		padding: 1em 0;
@@ -170,5 +187,13 @@
 	}
 	#contact-form input[type=submit] {
 		width: 100%;
+	}
+
+	section.spacer {
+	    padding: 60px 0 0px;
+	}
+
+	.stretch {
+	    letter-spacing: 3px;
 	}
 }
