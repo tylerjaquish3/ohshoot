@@ -755,6 +755,10 @@ section#services .service-box {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+.service-box img {
+	height: 215px !important;
+}
 section#services .span3:hover {
 	background:#e3e3e3;
 }
