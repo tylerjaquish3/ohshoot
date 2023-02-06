@@ -30,6 +30,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	   -moz-animation-duration: 0.5s !important;
 	     -o-animation-duration: 0.5s !important;
 	        animation-duration: 0.5s !important;
+			padding: 10px;
 }
 
 

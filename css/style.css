@@ -1073,16 +1073,12 @@ ul.social-networks li i.icon-bgdark {
 }
 
 
-ul.social-networks li a i.icon-instagram:hover {
+ul.social-networks li a i.icon-instagram {
 	background: #ba7b3d;
 	color: #fff;
 }
 
-ul.social-networks li a i.icon-twitter:hover {
-	background: #5ad2eb;
-	color: #fff;
-}
-ul.social-networks li a i.icon-facebook:hover {
+ul.social-networks li a i.icon-facebook {
 	background: #4267b2;
 	color: #fff;
 }
